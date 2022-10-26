@@ -17,7 +17,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-top: 106px;;
 }
 .nav{
-    
+
     
     padding-top: 20px;
     width: 375px;
@@ -45,3 +45,8 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     justify-items:auto;
  }
+
+ a:hover.logo{
+    color: rgb(37, 3, 3);
+ }
+ 
