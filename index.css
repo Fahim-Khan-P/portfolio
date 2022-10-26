@@ -1,0 +1,47 @@
+.main {
+  background-image: url('./image.png');
+  background-position: center;
+  background-size: cover;
+  width: 375px;
+  height: 718px;
+}
+
+.connect {
+text-decoration: none;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+.primaryHeading{
+    font-size: 40px;
+    padding-top: 106px;;
+}
+.nav{
+    
+    
+    padding-top: 20px;
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+    ;
+}
+
+.menu{
+    padding-right: 20px;
+   
+}
+    
+ .logo{
+    text-decoration: none;
+    color: #6070ff;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .icons{
+    padding-top: 10px;
+    width: 100px;
+    justify-content: space-around;
+    display: flex;
+    justify-items:auto;
+ }
