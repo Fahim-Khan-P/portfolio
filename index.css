@@ -15,6 +15,8 @@ html {
   width: 375px;
   height: 660px;
   margin: 0 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu {
@@ -69,6 +71,7 @@ html {
   justify-content: flex-start;
   display: flex;
   gap: 13px;
+  list-style-type: none;
 }
 
 .icons i {
