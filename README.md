@@ -1,56 +1,39 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# My Portfolio
 
-> Description the project.
+>This is my first portfolio website.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML and CSS
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link]()
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+node js, npm and git
 
 ### Setup
+git clone git@github.com:Fahim-Khan-P/portfolio.git
+cd Portfolio
 
 ### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+npm i
 
 ## Authors
 
-👤 **Author1**
+👤 **Fahim Khan**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@githubhandle](https://github.com/Fahim-Khan-P)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fahim-khan-38a4b3240/)
 
 ## 🤝 Contributing
 
@@ -72,4 +55,3 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
