@@ -355,6 +355,10 @@ a:hover#resume {
   align-items: center;
 }
 
+.iconClass a {
+  color: rgb(52, 69, 99);
+}
+
 .languagesList li a {
   color: rgb(37, 56, 88);
 }
