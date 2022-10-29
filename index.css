@@ -50,7 +50,7 @@ a:hover.logo {
 }
 
 .main {
-  background-image: url(/image.png);
+  background-image: url(./image.png);
   background-position: center;
   background-size: contain;
   width: 375px;
@@ -88,6 +88,7 @@ a:hover.logo {
 
 .connect {
   color: rgb(127, 140, 255);
+  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -122,7 +123,7 @@ a {
 }
 
 .image2 {
-  background-image: url('/image2.png');
+  background-image: url('./image2.png');
 }
 
 .img {
@@ -257,15 +258,15 @@ a:hover.seeProject {
 }
 
 .image3 {
-  background-image: url('/image3.png');
+  background-image: url('./image3.png');
 }
 
 .image4 {
-  background-image: url(/image4.png);
+  background-image: url(./image4.png);
 }
 
 .image5 {
-  background-image: url(/img.png);
+  background-image: url(./img.png);
 }
 
 .about {
@@ -284,7 +285,6 @@ a:hover.seeProject {
   align-self: flex-start;
   width: 200px;
   height: 101px;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -295,6 +295,8 @@ a:hover.seeProject {
 
 .connectAbout {
   align-self: flex-start;
+  font-size: 16px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .aboutIcons {
