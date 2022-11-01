@@ -416,3 +416,31 @@ a:hover#resume {
   margin-bottom: 50px;
 }
 
+.contact-me {
+  width: 801px;
+  height: 56px;
+  left: -213px;
+  top: 4734px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.contact-p {
+  width: 327px;
+  height: 102px;
+  left: 24px;
+  top: 4802px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+}
