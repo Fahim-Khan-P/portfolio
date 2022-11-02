@@ -417,39 +417,39 @@ a:hover#resume {
 }
 
 .contact-me {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   padding-top: 103px;
 }
 
 .contact-p {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #ebebff;
+  color: rgb(235, 235, 255);
   padding: 24px 12px 24px 12px;
 }
 
 .about-contact {
   background-image: url(./contact-form-bg.png);
-  background-position: center;
-  background-size: contain;
+  background-size: 65%;
   width: 375px;
   display: flex;
   flex-direction: column;
-  background-color: #6070ff;
+  justify-content: center;
+  background-color: rgb(96, 112, 255);
   background-repeat: no-repeat;
   border-top-left-radius: 88px;
-  background-position: 7em;
+  background-position: 8.3em 1em;
 }
 
 .form {
@@ -469,4 +469,9 @@ a:hover#resume {
   padding: 12px 16px;
   border: none;
   border-radius: 8px;
+}
+
+#shape {
+  padding: 0 100px 8px 100px;
+  border-radius: 10px;
 }
