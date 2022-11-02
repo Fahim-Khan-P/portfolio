@@ -415,3 +415,82 @@ a:hover#resume {
 .fr2 {
   margin-bottom: 50px;
 }
+
+.contact-me {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 103px;
+}
+
+.contact-p {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: rgb(235, 235, 255);
+  padding: 24px 12px 24px 12px;
+}
+
+.about-contact {
+  background-image: url(./contact-form-bg.png);
+  background-size: 65%;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(96, 112, 255);
+  background-repeat: no-repeat;
+  border-top-left-radius: 88px;
+  background-position: 8.3em 1em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-elements {
+  margin: 20px 24px;
+  padding: 15px 38px 15px 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+#btn-1 {
+  margin: 24px 211px 45px 24px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 1px rgb(153, 153, 153);
+}
+
+#shape {
+  padding: 0 100px 8px 100px;
+  border-radius: 10px;
+}
+
+#btn-1:hover {
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(64, 83, 252, 0.24);
+}
+
+#btn-1:active {
+  border-radius: 16px;
+  color: white;
+  background-color: rgb(34, 48, 210);
+  box-shadow: 0 2px rgb(102, 102, 102);
+  transform: translateY(4px);
+}
+
+#btn-1:enabled {
+  color: rgb(180, 185, 232);
+}
