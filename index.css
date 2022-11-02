@@ -469,9 +469,28 @@ a:hover#resume {
   padding: 12px 16px;
   border: none;
   border-radius: 8px;
+  box-shadow: 0 1px rgb(153, 153, 153);
 }
 
 #shape {
   padding: 0 100px 8px 100px;
   border-radius: 10px;
+}
+
+#btn-1:hover {
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(64, 83, 252, 0.24);
+}
+
+#btn-1:active {
+  border-radius: 16px;
+  color: white;
+  background-color: rgb(34, 48, 210);
+  box-shadow: 0 2px rgb(102, 102, 102);
+  transform: translateY(4px);
+}
+
+#btn-1:enabled {
+  color: rgb(180, 185, 232);
 }
