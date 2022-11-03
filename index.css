@@ -9,17 +9,6 @@ html {
   box-sizing: border-box;
 }
 
-.workSection {
-  display: grid;
-  grid-template-columns: 327px;
-  grid-template-rows: 552px 596px 552px 596px;
-  row-gap: 114px;
-  background: rgb(229, 229, 229);
-  width: 375px;
-  padding-top: 114px;
-  position: relative;
-}
-
 .nav {
   padding: 10px 25px;
   width: 375px;
@@ -50,7 +39,7 @@ a:hover.logo {
 }
 
 .main {
-  background-image: url(./image.png);
+  background-image: url(./icons/image.png);
   background-position: center;
   background-size: contain;
   width: 375px;
@@ -76,6 +65,17 @@ a:hover.logo {
   line-height: 52px;
   color: rgb(23, 43, 77);
   width: 327px;
+}
+
+.workSection {
+  display: grid;
+  grid-template-columns: 327px;
+  grid-template-rows: 552px 596px 552px 596px;
+  row-gap: 114px;
+  background: rgb(229, 229, 229);
+  width: 375px;
+  padding-top: 114px;
+  position: relative;
 }
 
 .mainContent {
@@ -123,7 +123,7 @@ a {
 }
 
 .image2 {
-  background-image: url('./image2.png');
+  background-image: url('./icons/image2.png');
 }
 
 .img {
@@ -258,15 +258,15 @@ a:hover.seeProject {
 }
 
 .image3 {
-  background-image: url('./image3.png');
+  background-image: url('./icons/image3.png');
 }
 
 .image4 {
-  background-image: url(./image4.png);
+  background-image: url(./icons/image4.png);
 }
 
 .image5 {
-  background-image: url(./img.png);
+  background-image: url(./icons/img.png);
 }
 
 .about {
@@ -440,7 +440,7 @@ a:hover#resume {
 }
 
 .about-contact {
-  background-image: url(./contact-form-bg.png);
+  background-image: url(./icons/contact-form-bg.png);
   background-size: 65%;
   width: 375px;
   display: flex;
