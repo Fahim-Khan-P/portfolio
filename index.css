@@ -596,7 +596,7 @@ a:hover#resume {
     padding: 25px;
     gap: 790px;
   }
-  
+
   #main-content {
     margin: 260px;
   }
@@ -605,13 +605,14 @@ a:hover#resume {
     font-style: bold;
     font-size: 48px;
     color: rgb(23, 43, 77);
-    width: 400px;  
+    width: 400px;
   }
 
-  .main-p, .mainContent{
+  .main-p,
+  .mainContent {
     font-size: 20px;
     margin: 0 0 25px 24px;
-}
+  }
   
   .workSection {
     display: grid;
@@ -657,14 +658,14 @@ a:hover#resume {
   }
 
   .tonic {
-    font-style: Bold;
+    font-style: bold;
     font-size: 40px;
     margin-bottom: 20px;
   }
-  
+
   .canopy {
     font-style: Medium;
-    Font-size: 18px;
+    font-size: 18px;
     margin-right: 24px;
   }
 
@@ -684,7 +685,7 @@ a:hover#resume {
   .seeProject {
     width: 124px;
     color: rgba(57, 109, 242, 1);
-    border-color:  rgba(57, 109, 242, 1);
+    border-color: rgba(57, 109, 242, 1);
   }
 
   .image3 {
@@ -700,8 +701,9 @@ a:hover#resume {
   }
 
   #second-card-responsive-p {
-    display:inherit;
+    display: inherit;
   }
+
   #card4 {
     flex-direction: row-reverse;
   }
@@ -712,12 +714,13 @@ a:hover#resume {
   }
 
   #about-div-2 {
-    width:500px;
+    width: 500px;
     margin-bottom: 150px;
     margin-right: 142px;
   }
 
-  .langItems, .framework {
+  .langItems,
+  .framework {
     width: 500px;
     display: flex;
     justify-content: space-between;
@@ -728,6 +731,7 @@ a:hover#resume {
     flex-direction: row;
     align-items: center;
   }
+
   .iconClass {
     display: flex;
     flex-direction: column;
@@ -741,6 +745,7 @@ a:hover#resume {
   .framework {
     margin-left: 200px;
   }
+
   .about-contact {
     background-image: url(./icons/resman.png);
     background-size: 80%;
@@ -750,7 +755,7 @@ a:hover#resume {
   }
 
   #footer-div {
-    width: 581px;;
+    width: 581px;
     height: 577px;
     margin: auto 319px 252px 454px;
   }
@@ -759,6 +764,7 @@ a:hover#resume {
     font-style: bold;
     font-size: 40px;
   }
+
   #about-p {
     font-size: 20px;
   }
@@ -770,5 +776,4 @@ a:hover#resume {
   #btn-1 {
     margin-left: 230px;
   }
-
 }
