@@ -589,7 +589,7 @@ a:hover#resume {
     margin: 114px 24px 0 0;
   }
 
- .nav {
+  .nav {
     width: 1420px;
     display: flex;
     justify-content: space-around;
@@ -613,7 +613,7 @@ a:hover#resume {
     font-size: 20px;
     margin: 0 0 25px 24px;
   }
-  
+
   .workSection {
     display: grid;
     grid-template-columns: 327px;
@@ -664,7 +664,7 @@ a:hover#resume {
   }
 
   .canopy {
-    font-style: Medium;
+    font-style: medium;
     font-size: 18px;
     margin-right: 24px;
   }
