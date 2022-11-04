@@ -193,7 +193,7 @@ a {
 }
 
 .language {
-  width: 140px;
+  width: 220px;
   display: grid;
   list-style-type: none;
   color: rgb(96, 112, 255);
@@ -202,11 +202,11 @@ a {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  gap: 8px;
-  grid-template-columns: auto auto auto;
+  gap: 4px;
+  grid-template-columns: auto auto auto auto;
   padding-left: 24px;
 }
-
+/* 
 .html {
   width: 53px;
   height: 24px;
@@ -222,7 +222,7 @@ a {
 }
 
 .javascript {
-  /* width: 89px; */
+  width: 89px;
   height: 24px;
   background: rgb(235, 235, 255);
   border-radius: 8px;
@@ -233,13 +233,17 @@ a {
   height: 24px;
   background: rgb(235, 235, 255);
   border-radius: 8px;
-}
+}*/
 
 .html,
 .css,
-.javascript {
+.javascript,
+.ruby {
   padding: 4px 12px 4px 12px;
-}
+  background: rgb(235, 235, 255);
+  border-radius: 8px;
+  width: fit-content;
+} 
 
 .seeProject {
   text-decoration: none;
@@ -263,8 +267,9 @@ a {
 
 a:hover.seeProject {
   background-color: rgb(96, 112, 255);
-  padding: 14px;
+  padding: 11px;
   color: rgb(255, 255, 255);
+  transform: translate(2px, 2px);
 }
 
 .image3 {
@@ -506,13 +511,13 @@ a:hover#resume {
 
 #btn-1:hover {
   border-radius: 10px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: rgba(64, 83, 252, 0.24);
 }
 
 #btn-1:active {
   border-radius: 16px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: rgb(34, 48, 210);
   box-shadow: 0 2px rgb(102, 102, 102);
   transform: translateY(4px);
@@ -536,11 +541,11 @@ a:hover#resume {
   display: none;
 }
 @media screen and (min-width: 760px) {
-  #d-hide {
+  .d-hide {
     display: none;
   }
 
-  #m-hide {
+  .m-hide {
     display: flex;
   }
 
@@ -652,7 +657,7 @@ a:hover#resume {
   }
 
   .first-section-second-part {
-    margin: 48px 46px auto 0;
+    margin: 48px 0px auto 0;
   }
 
   .tonic {
@@ -661,10 +666,10 @@ a:hover#resume {
     margin-bottom: 20px;
   }
 
-  .canopy {
+  #facebook {
     font-style: Medium;
     font-size: 18px;
-    margin-right: 24px;
+    margin-right: 48px;
   }
 
   .workList {
@@ -681,7 +686,7 @@ a:hover#resume {
   }
 
   .seeProject {
-    width: 124px;
+    width: 130px;
     color: rgba(57, 109, 242, 1);
     border-color: rgba(57, 109, 242, 1);
   }
@@ -712,9 +717,8 @@ a:hover#resume {
 
   #about-div-2 {
     width: 500px;
-    /* height:360px; */
-    margin-bottom: 150px;
-    margin-right: 142px;
+    margin-bottom: 250px
+
   }
 
   .langItems,
@@ -762,7 +766,6 @@ a:hover#resume {
   }
   #about-p {
     font-size: 20px;
-    width: ;
   }
   #shape {
     display: none;
@@ -777,5 +780,31 @@ a:hover#resume {
     background-color: #344563;
     transition: border, background-color;
     transition-duration: 1s;
+  }
+
+  .language {
+    width: 330px;
+  }
+
+  #lan {
+    width: 220px;
+  }
+
+  #seeProject {
+    background-color: rgb(64, 83, 252);
+    color: rgb(255, 255, 255);
+  }
+
+  #uber {
+    font-size: 18px;
+  }
+
+  #uber-nav {
+    padding-left: 24px;
+
+  }
+
+  #resume {
+    margin: 29px 312px 28px 24px;
   }
 }
