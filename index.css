@@ -775,5 +775,7 @@ a:hover#resume {
     transform: translate(2px, 2px);
     border: solid;
     background-color: #344563;
+    transition: border, background-color;
+    transition-duration: 1s;
   }
 }
