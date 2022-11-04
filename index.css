@@ -774,5 +774,6 @@ a:hover#resume {
   #btn-1:hover {
     transform: translate(2px, 2px);
     border: solid;
+    background-color: #344563;
   }
 }
