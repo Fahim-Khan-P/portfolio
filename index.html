@@ -20,13 +20,19 @@
   </head>
   <body>
     <nav class="nav">
-    <a href="#" class="logo">Portfolio</a>
+    <a href="#" id="logo">Portfolio</a>
       <a href="#" class="menu"><i class="fa-solid fa-bars"></i></a>
+      <ul id="responsive-menu">
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
 
     <main class="main">
-      <h1 class="primaryHeading">I'm Fahim Khan Glad to see you!</h1>
-      <p class="mainContent">
+      <div id="main-content">
+      <h1 id="main-h1">I'm Fahim Khan Glad to see you!</h1>
+      <p class="mainContent" id="main-p">
         I'm a software developer! I can help you build a product , feature or
         website Look through some of my work and experience! If you like what
         you see and have a project you need coded, don't hestiate to contact me.
@@ -50,13 +56,14 @@
           </a>
         </li>
       </ul>
+    </div>
     </main>
 
     <section class="workSection">
       <div class="card">
         <div class="image2 img"></div>
+        <div class="first-section-second-part">
         <h2 class="tonic">Tonic</h2>
-
         <div class="divList">
           <h3 class="canopy">canopy</h3>
           <img class="listIcon" src="./icons/Counter.png" alt="Coounter image" />
@@ -76,34 +83,44 @@
         </ul>
         <a href="#" class="seeProject">See Project</a>
       </div>
+      </div>
+      
 
-      <div class="card">
+      <div class="card" id="second-card">
         <div class="image3 img"></div>
+        <div class="first-section-second-part" id="second-page">
         <h2 class="tonic">Multi-Post Stories</h2>
         <div class="divList">
-          <h3 class="canopy">canopy</h3>
+          <h3 class="canopy d-hide">canopy</h3>
+          <h3 class="canopy m-hide">FACEBOOK</h3>
           <img class="listIcon" src="./icons/Counter.png" alt="Coounter image" />
-          <p class="workList">Back End Dev</p>
+          <p class="workList d-hide">Back End Dev</p>
+          <p class="workList m-hide">Full Stack Dev</p>
           <img class="listIcon" src="./icons/Counter.png" alt="Coounter image" />
           <p class="workList">2022</p>
         </div>
 
-        <p class="workText">
+        <p class="workText" id="second-card-p">
           A daily selection of privately personalized reads; no accounts or
           sign-ups required.
         </p>
+        <p id="second-card-responsive-p" class="workText">
+          Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+        </p>
         <ul class="language">
           <li class="html">html</li>
+          <li class="ruby m-hide">Ruby and rails</li>
           <li class="css">css</li>
           <li class="javascript">javacript</li>
         </ul>
         <a href="#" class="seeProject">See Project</a>
       </div>
+    </div>
 
       <div class="card">
         <div class="image4 img"></div>
+        <div class="first-section-second-part">
         <h2 class="tonic">Tonic</h2>
-
         <div class="divList">
           <h3 class="canopy">canopy</h3>
           <img class="listIcon" src="./icons/Counter.png" alt="Coounter image" />
@@ -123,9 +140,12 @@
         </ul>
         <a href="#" class="seeProject">See Project</a>
       </div>
+    </div>
 
-      <div class="card">
+      <div class="card" id="card4">
         <div class="image5 img"></div>
+        <div class="first-section-second-part">
+
         <h2 class="tonic">Multi-Post Stories</h2>
 
         <div class="divList">
@@ -147,11 +167,13 @@
         </ul>
         <a href="#" class="seeProject">See Project</a>
       </div>
+    </div>
     </section>
 
     <section class="about">
+      <div id="about-div-1">
       <h2 class="aboutHeading">About Myself</h2>
-      <p class="mainContent">
+      <p class="mainContent" id="about-p">
         I'm a software developer! I can help you build a product , feature or
         website Look through some of my work and experience! If you like what
         you see and have a project you need coded, don't hestiate to contact me.
@@ -176,7 +198,9 @@
           </a>
         </li>
       </ul>
-      <a href="#" class="seeProject" id="resume">Get my resume</a>
+      <a href="#" id="resume">Get my resume</a>
+    </div>
+    <div id="about-div-2">
       <ul class="languageAndFramework">
         <li class="languages">
           <div class="langItems">
@@ -210,9 +234,11 @@
           <i class="fa-solid fa-chevron-right"></i>
         </li>
       </ul>
+    </div>
     </section>
 
     <footer class="about-contact">
+      <div id="footer-div">
       <h1 class="contact-me">Contact me</h1>
       <p class="contact-p">
         If you have an application you are interested in developing, a feature
@@ -232,6 +258,7 @@
         <input type="submit" value="Get In Touch" class="seeProject" id="btn-1"/>
       </form>
       <img src="./icons/Shape.png" alt="line image" id="shape">
+      </div>
     </footer>
   </body>
 </html>
