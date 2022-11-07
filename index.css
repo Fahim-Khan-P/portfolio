@@ -595,7 +595,7 @@ a:hover#resume {
   }
 
   .nav {
-    width: 1420px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 25px;
