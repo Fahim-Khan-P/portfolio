@@ -206,7 +206,7 @@ a {
   grid-template-columns: auto auto auto auto;
   padding-left: 24px;
 }
-/* 
+
 .html {
   width: 53px;
   height: 24px;
@@ -233,7 +233,7 @@ a {
   height: 24px;
   background: rgb(235, 235, 255);
   border-radius: 8px;
-}*/
+}
 
 .html,
 .css,
@@ -243,7 +243,7 @@ a {
   background: rgb(235, 235, 255);
   border-radius: 8px;
   width: fit-content;
-} 
+}
 
 .seeProject {
   text-decoration: none;
@@ -326,7 +326,6 @@ a:hover.seeProject {
 
 #resume {
   align-self: flex-start;
-  margin-left: 24px;
   color: blue;
   border-color: rgb(28, 28, 190);
   display: flex;
@@ -338,8 +337,6 @@ a:hover.seeProject {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   background: rgb(255, 255, 255);
@@ -534,12 +531,15 @@ a:hover#resume {
 #responsive-menu {
   display: none;
 }
+
 #second-card-responsive-p {
   display: none;
 }
+
 .m-hide {
   display: none;
 }
+
 @media screen and (min-width: 760px) {
   .d-hide {
     display: none;
@@ -552,6 +552,7 @@ a:hover#resume {
   #second-card-p {
     display: none;
   }
+
   .menu {
     display: none;
   }
@@ -650,6 +651,7 @@ a:hover#resume {
   .image5 {
     background-image: url(./icons/resposive4.png);
   }
+
   .img {
     width: 544px;
     height: 448px;
@@ -657,17 +659,17 @@ a:hover#resume {
   }
 
   .first-section-second-part {
-    margin: 48px 0px auto 0;
+    margin: 48px 0 auto 0;
   }
 
   .tonic {
-    font-style: Bold;
+    font-style: bold;
     font-size: 40px;
     margin-bottom: 20px;
   }
 
   #facebook {
-    font-style: Medium;
+    font-style: medium;
     font-size: 18px;
     margin-right: 48px;
   }
@@ -706,6 +708,7 @@ a:hover#resume {
   #second-card-responsive-p {
     display: inherit;
   }
+
   #card4 {
     flex-direction: row-reverse;
   }
@@ -717,8 +720,7 @@ a:hover#resume {
 
   #about-div-2 {
     width: 500px;
-    margin-bottom: 250px
-
+    margin-bottom: 250px;
   }
 
   .langItems,
@@ -733,6 +735,7 @@ a:hover#resume {
     flex-direction: row;
     align-items: center;
   }
+
   .iconClass {
     display: flex;
     flex-direction: column;
@@ -746,6 +749,7 @@ a:hover#resume {
   .framework {
     margin-left: 200px;
   }
+
   .about-contact {
     background-image: url(./icons/resman.png);
     background-size: 80%;
@@ -764,12 +768,15 @@ a:hover#resume {
     font-style: bold;
     font-size: 40px;
   }
+
   #about-p {
     font-size: 20px;
   }
+
   #shape {
     display: none;
   }
+
   #btn-1 {
     margin-left: 230px;
   }
@@ -801,7 +808,6 @@ a:hover#resume {
 
   #uber-nav {
     padding-left: 24px;
-
   }
 
   #resume {
