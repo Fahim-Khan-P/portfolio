@@ -11,8 +11,8 @@
 
 ## Live Demo (if available)
 
+- Link: https://fahim-khan-p.github.io/portfolio/
 
-[Live Demo Link](https://fahim-khan-p.github.io/portfolio/)
 
 
 
