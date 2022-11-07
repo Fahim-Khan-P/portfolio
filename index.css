@@ -11,7 +11,7 @@ html {
 
 .nav {
   padding: 10px 25px;
-  width: 375px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,12 +42,13 @@ a:hover#logo {
   background-image: url(./icons/image.png);
   background-position: center;
   background-size: contain;
-  width: 375px;
+  width: 100%;
   height: 660px;
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 90px;
+  background-repeat: no-repeat;
 }
 
 #main-h1,
@@ -70,13 +71,15 @@ a:hover#logo {
 
 .workSection {
   display: grid;
-  grid-template-columns: 327px;
+  grid-template-columns: 90%;
   grid-template-rows: 552px 596px 552px 596px;
   row-gap: 114px;
   background: rgb(229, 229, 229);
-  width: 375px;
+  width: 100%;
   padding-top: 114px;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .mainContent {
@@ -117,10 +120,11 @@ a {
   align-items: center;
   flex-direction: column;
   background: rgb(255, 255, 255);
-  margin: 0 24px 0 24px;
+  margin: 0 auto;
   border-radius: 13px;
   border: 1px solid hsl(223, 12%, 89%);
-  width: 327px;
+  width: 90%;
+  min-width: 285px;
 }
 
 .image2 {
@@ -128,11 +132,14 @@ a {
 }
 
 .img {
-  background-size: cover;
-  width: 295px;
+  background-size: contain;
+  width: 90%;
+  min-width: 280px;
   height: 220px;
   border-radius: 8px;
   margin: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .tonic {
@@ -258,7 +265,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   background: rgb(255, 255, 255);
-  border: 1px solid rgba(57, 109, 242, 1);
+  border: 1px solid  rgba(57, 109, 242, 1);
   color: rgba(57, 109, 242, 1);
   border-radius: 10px;
   margin: 29px 186px 28px 24px;
@@ -290,7 +297,7 @@ a:hover.seeProject {
   align-items: center;
   padding-top: 114px;
   border-top-right-radius: 60px;
-  width: 375px;
+  width: 100%;
   border: 1px solid hsl(223, 12%, 89%);
   background: rgb(255, 255, 255);
   margin: 114px 24px 0 0;
@@ -471,7 +478,7 @@ a:hover#resume {
 .about-contact {
   background-image: url(./icons/contact-form-bg.png);
   background-size: 65%;
-  width: 375px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -526,6 +533,8 @@ a:hover#resume {
 
 .first-section-second-part {
   padding: 0;
+  width: 90%;
+  min-width: 280px;
 }
 
 #responsive-menu {
@@ -595,11 +604,11 @@ a:hover#resume {
   }
 
   .nav {
-    width: 100%;
+    width: 1420px;
     display: flex;
     justify-content: space-around;
     padding: 25px;
-    gap: 790px;
+    gap: 791px;
   }
 
   #main-content {
@@ -621,7 +630,7 @@ a:hover#resume {
 
   .workSection {
     display: grid;
-    grid-template-columns: 327px;
+    grid-template-columns: 100%;
     grid-template-rows: 552px 596px 552px 596px;
     background: rgb(229, 229, 229);
     width: 1420px;
@@ -659,7 +668,7 @@ a:hover#resume {
   }
 
   .first-section-second-part {
-    margin: 48px 0 auto 0;
+    margin: 48px 46px auto 0;
   }
 
   .tonic {
@@ -668,10 +677,10 @@ a:hover#resume {
     margin-bottom: 20px;
   }
 
-  #facebook {
+  .canopy {
     font-style: medium;
     font-size: 18px;
-    margin-right: 48px;
+    margin-right: 24px;
   }
 
   .workList {
@@ -720,7 +729,8 @@ a:hover#resume {
 
   #about-div-2 {
     width: 500px;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
+    margin-right: 142px;
   }
 
   .langItems,
@@ -779,38 +789,5 @@ a:hover#resume {
 
   #btn-1 {
     margin-left: 230px;
-  }
-
-  #btn-1:hover {
-    transform: translate(2px, 2px);
-    border: solid;
-    background-color: #344563;
-    transition: border, background-color;
-    transition-duration: 1s;
-  }
-
-  .language {
-    width: 330px;
-  }
-
-  #lan {
-    width: 220px;
-  }
-
-  #seeProject {
-    background-color: rgb(64, 83, 252);
-    color: rgb(255, 255, 255);
-  }
-
-  #uber {
-    font-size: 18px;
-  }
-
-  #uber-nav {
-    padding-left: 24px;
-  }
-
-  #resume {
-    margin: 29px 312px 28px 24px;
   }
 }
