@@ -46,22 +46,21 @@ a:hover#logo {
   height: 660px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 24px;
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 90px;
   background-repeat: no-repeat;
 }
 
-#main-h1,
-#main-p,
-#about-p,
-.icons,
-.connect {
-  margin: 0 24px 12px 24px;
+#main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 #main-h1 {
   font-size: 40px;
-  padding-top: 120px;
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
@@ -73,24 +72,18 @@ a:hover#logo {
   display: grid;
   grid-template-columns: 90%;
   grid-template-rows: 552px 596px 552px 596px;
-  row-gap: 114px;
   background: rgb(229, 229, 229);
   width: 100%;
-  padding-top: 114px;
+  row-gap: 114px;
+  padding: 114px 0;
   position: relative;
   align-items: center;
   justify-content: center;
+  justify-items: center;
 }
 
-.mainContent {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgb(52, 69, 99);
-}
-
-.connect {
+.connect,
+.main-connect {
   color: rgb(127, 140, 255);
   font-weight: 400;
   text-decoration: none;
@@ -120,11 +113,11 @@ a {
   align-items: center;
   flex-direction: column;
   background: rgb(255, 255, 255);
-  margin: 0 auto;
   border-radius: 13px;
   border: 1px solid hsl(223, 12%, 89%);
-  width: 90%;
+  width: 100%;
   min-width: 285px;
+  padding: 16px;
 }
 
 .image2 {
@@ -133,39 +126,40 @@ a {
 
 .img {
   background-size: contain;
-  width: 90%;
+  width: 100%;
   min-width: 280px;
   height: 220px;
   border-radius: 8px;
-  margin: 16px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.first-section-second-part {
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
 }
 
 .tonic {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  margin-top: 12px;
   align-self: flex-start;
-  margin: 0 24px 0 24px;
 }
 
 .divList {
   display: flex;
-  gap: 8px;
-  padding-left: 24px;
+  align-items: center;
+  margin-top: 20px;
+  gap: 12px;
 }
 
 .canopy {
-  width: 55px;
-  height: 16px;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #344563;
-  margin-top: 4px;
   text-transform: uppercase;
 }
 
@@ -174,7 +168,6 @@ a {
   height: 8px;
   background: rgb(193, 199, 208);
   border-radius: 4px;
-  margin-top: 8px;
 }
 
 .workList {
@@ -184,11 +177,9 @@ a {
   font-size: 13px;
   line-height: 16px;
   color: rgb(122, 134, 154);
-  margin-top: 3px;
 }
 
 .workText {
-  margin: 9px 16px 12px 28px;
   width: 295px;
   height: 76px;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -197,6 +188,7 @@ a {
   font-size: 15px;
   line-height: 24px;
   color: rgb(52, 69, 99);
+  margin-top: 20px;
 }
 
 .language {
@@ -211,50 +203,18 @@ a {
   line-height: 16px;
   gap: 4px;
   grid-template-columns: auto auto auto auto;
-  padding-left: 24px;
+  margin-top: 12px;
 }
 
-.html {
-  width: 53px;
-  height: 24px;
+.language li {
   background: rgb(235, 235, 255);
   border-radius: 8px;
-}
-
-.css {
-  width: 45px;
-  height: 24px;
-  background: rgb(235, 235, 255);
-  border-radius: 8px;
-}
-
-.javascript {
-  width: 89px;
-  height: 24px;
-  background: rgb(235, 235, 255);
-  border-radius: 8px;
-}
-
-.ruby {
-  width: 105px;
-  height: 24px;
-  background: rgb(235, 235, 255);
-  border-radius: 8px;
-}
-
-.html,
-.css,
-.javascript,
-.ruby {
-  padding: 4px 12px 4px 12px;
-  background: rgb(235, 235, 255);
-  border-radius: 8px;
-  width: fit-content;
+  text-align: center;
+  padding: 4px;
 }
 
 .seeProject {
   text-decoration: none;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   width: 124px;
   height: fit-content;
@@ -268,8 +228,9 @@ a {
   border: 1px solid  rgba(57, 109, 242, 1);
   color: rgba(57, 109, 242, 1);
   border-radius: 10px;
-  margin: 29px 186px 28px 24px;
   padding: 11px;
+  margin-top: 24px;
+  margin-bottom: 4px;
 }
 
 a:hover.seeProject {
@@ -295,12 +256,26 @@ a:hover.seeProject {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 114px;
   border-top-right-radius: 60px;
   width: 100%;
+  height: 1263px;
   border: 1px solid hsl(223, 12%, 89%);
   background: rgb(255, 255, 255);
-  margin: 114px 24px 0 0;
+  padding: 24px;
+}
+
+#about-div-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#about-div-2 {
+  padding-bottom: 225px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 48px;
 }
 
 .aboutHeading {
@@ -311,24 +286,31 @@ a:hover.seeProject {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  margin: 0 85px 26px 0;
-  padding-left: 24px;
+  margin-bottom: 12px;
+  margin-top: 114px;
+}
+
+.mainContent {
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  color: rgb(52, 69, 99);
 }
 
 .connectAbout {
   align-self: flex-start;
   font-size: 16px;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  margin-bottom: 12px;
 }
 
 .aboutIcons {
+  margin-bottom: 20px;
   display: flex;
   align-self: flex-start;
   gap: 13px;
   list-style-type: none;
-  margin: 26px 0 0 25px;
   height: 20px;
-  width: 17.985200881958008px;
+  width: 18px;
 }
 
 #resume {
@@ -349,7 +331,6 @@ a:hover.seeProject {
   background: rgb(255, 255, 255);
   border: 1px solid rgb(223, 225, 230);
   border-radius: 10px;
-  margin: 29px 186px 28px 24px;
   padding: 11px;
 }
 
@@ -376,15 +357,13 @@ a:hover#resume {
   font-size: 20px;
   line-height: 24px;
   color: rgb(0, 0, 0);
-  width: 300px;
   justify-content: space-between;
-  margin-bottom: 36px;
 }
 
 .langItems {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 .languagesList {
@@ -427,7 +406,6 @@ a:hover#resume {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px 0;
   gap: 24px;
 }
 
@@ -441,15 +419,8 @@ a:hover#resume {
   font-weight: 500;
   line-height: 24px;
   border-bottom: 1px solid rgba(220, 220, 220, 0.735);
-  padding-bottom: 23px;
-}
+  margin-top: 36px;
 
-.fr1 {
-  margin-bottom: 24px;
-}
-
-.fr2 {
-  margin-bottom: 50px;
 }
 
 .contact-me {
@@ -461,7 +432,6 @@ a:hover#resume {
   align-items: center;
   text-align: center;
   color: rgb(255, 255, 255);
-  padding-top: 103px;
 }
 
 .contact-p {
@@ -486,31 +456,43 @@ a:hover#resume {
   background-repeat: no-repeat;
   border-top-left-radius: 88px;
   background-position: 8.3em 1em;
+  padding: 24px;
+  margin-top: -160px;
+  position: relative;
+}
+
+.footer-top {
+  margin-top: 100px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
+  gap: 20px;
+
 }
 
 .form-elements {
-  margin: 20px 24px;
   padding: 15px 38px 15px 16px;
   border-radius: 8px;
   border: none;
 }
 
 #btn-1 {
-  margin: 24px 211px 45px 24px;
-  padding: 11px 5px;
+  padding: 11px;
+  margin: 0 0 32px 0;
   border: none;
   border-radius: 8px;
   box-shadow: 0 1px rgb(153, 153, 153);
 }
 
 #shape {
-  padding: 0 100px 8px 100px;
+  position: absolute;
   border-radius: 10px;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #btn-1:hover {
@@ -529,12 +511,6 @@ a:hover#resume {
 
 #btn-1:enabled {
   color: rgb(180, 185, 232);
-}
-
-.first-section-second-part {
-  padding: 0;
-  width: 90%;
-  min-width: 280px;
 }
 
 #responsive-menu {
@@ -594,25 +570,18 @@ a:hover#resume {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 114px;
     border-top-right-radius: 60px;
-    width: 1420px;
+    width: 100%;
     height: 924px;
     border: 1px solid hsl(223, 12%, 89%);
     background: rgb(255, 255, 255);
-    margin: 114px 24px 0 0;
   }
 
   .nav {
-    width: 1420px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 25px;
-    gap: 790px;
-  }
-
-  #main-content {
-    margin: 260px;
   }
 
   #main-h1 {
@@ -625,7 +594,6 @@ a:hover#resume {
   .main-p,
   .mainContent {
     font-size: 20px;
-    margin: 0 0 25px 24px;
   }
 
   .workSection {
@@ -633,8 +601,9 @@ a:hover#resume {
     grid-template-columns: 100%;
     grid-template-rows: 552px 596px 552px 596px;
     background: rgb(229, 229, 229);
-    width: 1420px;
+    width: 100%;
     position: relative;
+    justify-items: center;
   }
 
   .card {
@@ -642,10 +611,9 @@ a:hover#resume {
     align-items: center;
     flex-direction: row;
     background: rgb(255, 255, 255);
-    margin: 0 142px 0 142px;
     border-radius: 13px;
     border: 1px solid hsl(223, 12%, 89%);
-    width: 1156px;
+    width: 90%;
     height: 496px;
   }
 
@@ -664,23 +632,21 @@ a:hover#resume {
   .img {
     width: 544px;
     height: 448px;
-    margin: 24px;
+    flex: 1;
   }
 
   .first-section-second-part {
-    margin: 48px 46px auto 0;
+    flex: 1;
   }
 
   .tonic {
     font-style: bold;
     font-size: 40px;
-    margin-bottom: 20px;
   }
 
   .canopy {
     font-style: medium;
     font-size: 18px;
-    margin-right: 24px;
   }
 
   .workList {
@@ -688,7 +654,8 @@ a:hover#resume {
   }
 
   .divList {
-    margin-bottom: 32px;
+    display: flex;
+    gap: 12px;
   }
 
   .workText {
@@ -710,10 +677,6 @@ a:hover#resume {
     flex-direction: row-reverse;
   }
 
-  #second-page {
-    margin-left: 24px;
-  }
-
   #second-card-responsive-p {
     display: inherit;
   }
@@ -723,14 +686,11 @@ a:hover#resume {
   }
 
   #about-div-1 {
-    margin: -150px 25px 134px 142px;
     width: 500px;
   }
 
   #about-div-2 {
     width: 500px;
-    margin-bottom: 150px;
-    margin-right: 142px;
   }
 
   .langItems,
@@ -756,22 +716,19 @@ a:hover#resume {
     border-radius: 8px;
   }
 
-  .framework {
-    margin-left: 200px;
-  }
-
   .about-contact {
     background-image: url(./icons/resman.png);
     background-size: 80%;
-    width: 1420px;
+    width: 100%;
     background-position: 10.3em 9em;
-    margin-top: -200px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
   }
 
   #footer-div {
     width: 581px;
     height: 577px;
-    margin: auto 319px 252px 454px;
   }
 
   .contact-me {
@@ -785,9 +742,5 @@ a:hover#resume {
 
   #shape {
     display: none;
-  }
-
-  #btn-1 {
-    margin-left: 230px;
   }
 }
