@@ -192,7 +192,7 @@ a {
 }
 
 .language {
-  width: 220px;
+  width: fit-content;
   display: grid;
   list-style-type: none;
   color: rgb(96, 112, 255);
@@ -210,7 +210,7 @@ a {
   background: rgb(235, 235, 255);
   border-radius: 8px;
   text-align: center;
-  padding: 4px;
+  padding: 4px 10px;
 }
 
 .seeProject {
@@ -569,12 +569,13 @@ a:hover#resume {
   .about {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     border-top-right-radius: 60px;
     width: 100%;
     height: 924px;
     border: 1px solid hsl(223, 12%, 89%);
     background: rgb(255, 255, 255);
+    gap: 24px;
   }
 
   .nav {
@@ -615,6 +616,7 @@ a:hover#resume {
     border: 1px solid hsl(223, 12%, 89%);
     width: 90%;
     height: 496px;
+    gap: 22px;
   }
 
   .image2 {
@@ -637,6 +639,8 @@ a:hover#resume {
 
   .first-section-second-part {
     flex: 1;
+    align-self: flex-start;
+    margin-top: 48px;
   }
 
   .tonic {
@@ -660,7 +664,7 @@ a:hover#resume {
 
   .workText {
     font-size: 16px;
-    width: 490px;
+    width: 100%;
   }
 
   .seeProject {
@@ -686,11 +690,18 @@ a:hover#resume {
   }
 
   #about-div-1 {
-    width: 500px;
+    flex: 1;
+    margin: 142px 0 0 142px;
   }
 
   #about-div-2 {
-    width: 500px;
+    flex: 1;
+    margin: 166px 142px 0 0;
+    padding: 0;
+  }
+
+  .aboutHeading {
+    margin-top: 0;
   }
 
   .langItems,
@@ -721,14 +732,13 @@ a:hover#resume {
     background-size: 80%;
     width: 100%;
     background-position: 10.3em 9em;
-    height: 80vh;
+    height: 846px;
     display: flex;
     align-items: center;
   }
 
   #footer-div {
     width: 581px;
-    height: 577px;
   }
 
   .contact-me {
@@ -738,6 +748,11 @@ a:hover#resume {
 
   #about-p {
     font-size: 20px;
+  }
+
+  #btn-1 {
+    align-self: center;
+    margin-bottom: 127px;
   }
 
   #shape {
