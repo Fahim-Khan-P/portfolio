@@ -6,23 +6,21 @@ const porfolioLink = document.getElementById('portfolioLink');
 const aboutLink = document.getElementById('aboutLink');
 const contactLink = document.getElementById('contactLink');
 
-porfolioLink.addEventListener('click', () => {
+function closeFunction() {
   mobileNav[0].classList.remove('open');
   nav[0].classList.remove('close');
   mobileNav[0].classList.add('close');
   nav[0].classList.add('openFlex');
+}
+
+porfolioLink.addEventListener('click', () => {
+  closeFunction();
 });
 aboutLink.addEventListener('click', () => {
-  mobileNav[0].classList.remove('open');
-  nav[0].classList.remove('close');
-  mobileNav[0].classList.add('close');
-  nav[0].classList.add('openFlex');
+  closeFunction();
 });
 contactLink.addEventListener('click', () => {
-  mobileNav[0].classList.remove('open');
-  nav[0].classList.remove('close');
-  mobileNav[0].classList.add('close');
-  nav[0].classList.add('openFlex');
+  closeFunction();
 });
 
 humberger.addEventListener('click', () => {
@@ -32,8 +30,5 @@ humberger.addEventListener('click', () => {
   nav[0].classList.add('close');
 });
 close.addEventListener('click', () => {
-  mobileNav[0].classList.remove('open');
-  nav[0].classList.remove('close');
-  mobileNav[0].classList.add('close');
-  nav[0].classList.add('openFlex');
+  closeFunction();
 });
