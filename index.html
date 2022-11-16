@@ -21,13 +21,27 @@
 
     <nav class="nav">
     <a href="#" id="logo">Portfolio</a>
-      <a href="#" class="menu"><i class="fa-solid fa-bars"></i></a>
-      <ul id="responsive-menu">
+      <ul id="responsive-menu" class="mainmenu">
         <li><a href="#port">Portfolio</a></li>
         <li><a href="#ab">About</a></li>
         <li><a href="#cont">Contact</a></li>
       </ul>
+      <a href="#" class="menu" id="humberger"><i class="fa-solid fa-bars"></i></a>
     </nav>
+
+
+
+    <nav class="mobile-nav">
+      <a href="#" id="closemenu" ><i class="fa-solid fa-xmark"></i></a>
+      <ul class="moblie-menu">
+        <li><a href="#port" id = "portfolioLink"class ="moblie-menu-list">Portfolio</a></li>
+        <li><a href="#ab" id = "aboutLink"class ="moblie-menu-list">About</a></li>
+        <li><a href="#cont" id="contactLink" class ="moblie-menu-list">Contact</a></li>
+      </ul>
+      <img src="./icons/Shape.png" alt="line image" id="shape" class="shape">
+    </nav>
+
+
 
     <main class="main" id="port">
       <div id="main-content">
@@ -59,7 +73,7 @@
     </div>
     </main>
 
-    <section class="workSection">
+    <section class="workSection" id = "workSection">
       <div class="card">
         <div class="image2 img"></div>
         <div class="first-section-second-part">
@@ -262,8 +276,9 @@
         <textarea name="message" maxlength="500" class="form-elements" cols="50" rows="10" placeholder="Write your message here"></textarea>
         <input type="submit" value="Get In Touch" class="seeProject" id="btn-1"/>
       </form>
-      <img src="./icons/Shape.png" alt="line image" id="shape">
+      <img src="./icons/Shape.png" alt="line image" id="shape" class="shape">
       </div>
     </footer>
+    <script  src="./index.js" ></script>
   </body>
 </html>
