@@ -796,3 +796,132 @@ a:hover#resume {
     display: none;
   }
 }
+
+.popupSection {
+  position: fixed;
+  border-radius: 8px;
+  display: none;
+  padding: 24px;
+  width: 100%;
+  background-color: white;
+  z-index: 124000;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.topDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topDiv-list {
+  display: flex;
+  gap: 8px;
+}
+
+.topDiv h1 {
+  font-weight: bold;
+  line-height: 60px;
+}
+
+#canopy {
+  font-weight: 800;
+}
+
+.popImage {
+  margin-top: 36px;
+  margin-bottom: 60px;
+  width: 100%;
+  height: 586px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.bottomDiv {
+  display: flex;
+  margin-bottom: 60px;
+  justify-content: space-around;
+}
+
+.popLanguageList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-bottom: 1px solid rgb(235, 236, 240);
+  padding-bottom: 20px;
+}
+
+.bottomDiv-left-p {
+  width: 778px;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.popLanguageList li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(235, 235, 255);
+  border-radius: 8px;
+  text-align: center;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: rgb(96, 112, 255);
+}
+
+.bottomDiv-right-btn {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  display: flex;
+  font-size: 16px;
+  padding: 10px;
+  width: 140px;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-evenly;
+  background-color: white;
+  color: rgb(96, 112, 255);
+  border-radius: 8px;
+  border-color: rgb(96, 112, 255);
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 760px) {
+  .hide {
+    display: none;
+  }
+
+  .bottomDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottomDiv-left-p {
+    width: 90%;
+  }
+
+  .bottomDiv-right-btn {
+    justify-content: space-evenly;
+  }
+
+  .bottomDiv-right {
+    margin-top: 16px;
+  }
+
+  .popImage {
+    height: 220px;
+  }
+}
