@@ -186,6 +186,8 @@ const func = (position) => {
 };
 
 const email = document.getElementById('email');
+const namefield = document.getElementById('username');
+const textarea = document.getElementById('textarea');
 const message = document.getElementById('erorrMsg');
 const form = document.getElementById('form');
 
@@ -202,6 +204,14 @@ const checkEmail = () => {
 form.addEventListener('submit', (e) => {
   if (checkEmail() === false) {
     e.preventDefault();
+  } else {
+    const data = {
+      name: namefield.value,
+      email: email.value,
+      text: textarea.value,
+    };
+
+    localStorage.setItem('data', JSON.stringify(data));
   }
 });
 
