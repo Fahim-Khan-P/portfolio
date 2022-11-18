@@ -74,119 +74,6 @@
     </main>
     <div class="popupSection"></div>
     <section class="workSection" id = "workSection">
-      <!-- <div class="card">
-        <div class="image2 img"></div>
-        <div class="first-section-second-part">
-        <h2 class="tonic">Tonic</h2>
-        <div class="divList">
-          <h3 class="canopy">canopy</h3>
-          <img class="listIcon" src="./icons/Counter.png" alt="Coounter image" />
-          <p class="workList">Back End Dev</p>
-          <img class="listIcon" src="./icons/Counter.png" alt="Coounter image" />
-          <p class="workList">2022</p>
-        </div>
-        <p class="workText">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required.
-        </p>
-        <ul class="language" id="lan">
-          <li class="html">html</li>
-          <li class="css">css</li>
-          <li class="javascript">javacript</li>
-        </ul>
-        <a href="#" class="seeProject">See Project</a>
-      </div>
-      </div>
-
-      <div class="card" id="second-card">
-        <div class="image3 img"></div>
-        <div class="first-section-second-part" id="second-page">
-        <h2 class="tonic">Multi-Post Stories</h2>
-        <div class="divList" id="divList">
-          <h3 class="canopy d-hide">canopy</h3>
-          <h3 class="canopy m-hide" id="facebook">FACEBOOK</h3>
-          <img class="listIcon" src="./icons/Counter.png" alt="Coounter image" />
-          <p class="workList d-hide">Back End Dev</p>
-          <p class="workList m-hide">Full Stack Dev</p>
-          <img class="listIcon" src="./icons/Counter.png" alt="Coounter image" />
-          <p class="workList">2022</p>
-        </div>
-        <p class="workText" id="second-card-p">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required.
-        </p>
-        <p id="second-card-responsive-p" class="workText">
-          Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
-        </p>
-        <ul class="language">
-          <li class="html">html</li>
-          <li class="ruby m-hide">Ruby and rails</li>
-          <li class="css">css</li>
-          <li class="javascript">javacript</li>
-        </ul>
-        <a href="#" class="seeProject">See Project</a>
-      </div>
-    </div>
-
-      <div class="card">
-        <div class="image4 img"></div>
-        <div class="first-section-second-part">
-          <h2 class="tonic">Facebook 360</h2>
-          <div class="divList" id="divList">
-            <h3 class="canopy d-hide">canopy</h3>
-            <h3 class="canopy m-hide" id="facebook">FACEBOOK</h3>
-            <img class="listIcon" src="./icons/Counter.png" alt="Coounter image" />
-            <p class="workList d-hide">Back End Dev</p>
-            <p class="workList m-hide">Full Stack Dev</p>
-            <img class="listIcon" src="./icons/Counter.png" alt="Coounter image" />
-            <p class="workList">2022</p>
-          </div>
-          <p class="workText" id="second-card-p">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <p id="second-card-responsive-p" class="workText">
-            Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
-          </p>
-        <ul class="language">
-          <li class="html">html</li>
-          <li class="css">css</li>
-          <li class="ruby m-hide">Ruby and rails</li>
-          <li class="javascript">javacript</li>
-        </ul>
-        <a href="#" class="seeProject" id="seeProject">See Project</a>
-      </div>
-    </div>
-
-      <div class="card" id="card4">
-        <div class="image5 img"></div>
-        <div class="first-section-second-part" id="uber-nav">
-        <h2 class="tonic">Uber Navigation</h2>
-        <div class="divList" id="divList">
-          <h3 class="canopy d-hide">canopy</h3>
-          <h3 class="canopy m-hide" id="uber">Uber</h3>
-          <img class="listIcon" src="./icons/Counter.png" alt="Coounter image" />
-          <p class="workList d-hide">Back End Dev</p>
-          <p class="workList m-hide">Lead Developer</p>
-          <img class="listIcon" src="./icons/Counter.png" alt="Coounter image" />
-          <p class="workList">2022</p>
-        </div>
-        <p class="workText" id="second-card-p">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required.
-        </p>
-        <p id="second-card-responsive-p" class="workText">
-          Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
-        </p>
-        <ul class="language">
-          <li class="html">html</li>
-          <li class="css">css</li>
-          <li class="ruby m-hide">Ruby and rails</li>
-          <li class="javascript">javacript</li>
-        </ul>
-        <a href="#" class="seeProject">See Project</a>
-      </div>
-    </div>-->
     </section>
 
     <section class="about" id="ab">
@@ -264,7 +151,7 @@
         with it
       </p>
     </div>
-      <form action="https://formspree.io/f/xpznolgk" method="post" class="form">
+      <form action="https://formspree.io/f/xpznolgk" method="post" class="form" id="form">
         <input maxlength="30" class="form-elements" type="text" name="name" placeholder="Yeremias" required />
         <input
           class="form-elements"
@@ -272,13 +159,16 @@
           name="email"
           placeholder="natajayanj14@gmail.com"
           required
+          id="email"
         />
         <textarea name="message" maxlength="500" class="form-elements" cols="50" rows="10" placeholder="Write your message here"></textarea>
+        <span class='erorrMsg' id="erorrMsg">Email Should be in lowercase!</span>
         <input type="submit" value="Get In Touch" class="seeProject" id="btn-1"/>
+        
       </form>
       <img src="./icons/Shape.png" alt="line image" id="shape" class="shape">
       </div>
     </footer>
-    <script  src="./index.js" ></script>
+    <script defer src="./index.js" ></script>
   </body>
 </html>

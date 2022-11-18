@@ -125,15 +125,9 @@ const func = (position) => {
   workList2.innerText = projects[position].details[2];
   topDivList.append(h3, listIcon, workList, listIcon2, workList2);
 
-  // projects[position].details.forEach((item) => {
-  //   const topDivListItem = document.createElement('li');
-  //   topDivListItem.classList.add('topDiv-list-items');
-  //   topDivListItem.innerText = item;
-  //   topDivList.append(topDivListItem);
-  // });
   const popImage = document.createElement('div');
   popImage.classList.add('popImage');
-  // popImage.setAttribute('src', './main.png');
+
   popImage.style.backgroundImage = `url('${projects[position].image}')`;
 
   const bottomDiv = document.createElement('div');
@@ -191,64 +185,92 @@ const func = (position) => {
   popupSection[0].append(topDiv, topDivList, popImage, bottomDiv);
 };
 
+const email = document.getElementById('email');
+const message = document.getElementById('erorrMsg');
+const form = document.getElementById('form');
+
+const checkEmail = () => {
+  const emailValue = email.value.trim();
+  if (emailValue.match(/[A-Z]/)) {
+    message.style.display = 'block';
+    return false;
+  }
+  message.style.display = 'none';
+  return true;
+};
+
+form.addEventListener('submit', (e) => {
+  if (checkEmail() === false) {
+    e.preventDefault();
+  }
+});
+
 const workSection = document.getElementById('workSection');
 
-for (let i = 0; projects.length; i += 1) {
-  const card = document.createElement('div');
-  card.classList.add('card');
-  const img = document.createElement('div');
-  img.classList.add('img');
-  img.style.backgroundImage = `url('${projects[i].image}')`;
-  const firstSectionSecondPart = document.createElement('div');
-  firstSectionSecondPart.classList.add('first-section-second-part');
-  const h2 = document.createElement('h2');
-  h2.classList.add('tonic');
-  h2.innerText = projects[i].name;
+const loadCards = (newProjects) => {
+  newProjects.forEach((item, index) => {
+    const card = document.createElement('div');
+    card.classList.add('card');
+    const img = document.createElement('div');
+    img.classList.add('img');
+    img.style.backgroundImage = `url('${item.image}')`;
+    const firstSectionSecondPart = document.createElement('div');
+    firstSectionSecondPart.classList.add('first-section-second-part');
+    const h2 = document.createElement('h2');
+    h2.classList.add('tonic');
+    const { name } = item;
+    h2.innerText = name;
 
-  const divList = document.createElement('div');
-  divList.classList.add('divList');
+    const divList = document.createElement('div');
+    divList.classList.add('divList');
 
-  const h3 = document.createElement('h3');
-  h3.classList.add('canopy');
-  h3.innerText = projects[i].details[0];
-  const listIcon = document.createElement('img');
-  listIcon.classList.add('listIcon');
-  listIcon.setAttribute('src', './icons/Counter.png');
-  listIcon.setAttribute('alt', 'Icon image');
-  const workList = document.createElement('p');
-  workList.classList.add('workList');
-  workList.innerText = projects[i].details[1];
-  const listIcon2 = document.createElement('img');
-  listIcon2.classList.add('listIcon');
-  listIcon2.setAttribute('src', './icons/Counter.png');
-  listIcon2.setAttribute('alt', 'Icon image');
-  const workList2 = document.createElement('p');
-  workList2.classList.add('workList');
-  workList2.innerText = projects[i].details[2];
-  divList.append(h3, listIcon, workList, listIcon2, workList2);
+    const h3 = document.createElement('h3');
+    h3.classList.add('canopy');
+    h3.innerText = item.details[0];
+    const listIcon = document.createElement('img');
+    listIcon.classList.add('listIcon');
+    listIcon.setAttribute('src', './icons/Counter.png');
+    listIcon.setAttribute('alt', 'Icon image');
+    const workList = document.createElement('p');
+    workList.classList.add('workList');
+    workList.innerText = item.details[1];
+    const listIcon2 = document.createElement('img');
+    listIcon2.classList.add('listIcon');
+    listIcon2.setAttribute('src', './icons/Counter.png');
+    listIcon2.setAttribute('alt', 'Icon image');
+    const workList2 = document.createElement('p');
+    workList2.classList.add('workList');
+    workList2.innerText = item.details[2];
+    divList.append(h3, listIcon, workList, listIcon2, workList2);
 
-  const workText = document.createElement('p');
-  workText.classList.add('workText');
-  workText.innerText = projects[i].description;
-  const language = document.createElement('ul');
-  language.classList.add('language');
-  language.setAttribute('id', 'lan');
-  projects[i].techs.forEach((item) => {
-    const li = document.createElement('li');
-    li.innerText = item;
-    language.append(li);
+    const workText = document.createElement('p');
+    workText.classList.add('workText');
+    workText.innerText = item.description;
+    const language = document.createElement('ul');
+    language.classList.add('language');
+    language.setAttribute('id', 'lan');
+    item.techs.forEach((item) => {
+      const li = document.createElement('li');
+      li.innerText = item;
+      language.append(li);
+    });
+    const seeProject = document.createElement('a');
+    seeProject.classList.add('seeProject');
+    seeProject.setAttribute('id', `${index}`);
+    seeProject.innerText = 'See Project';
+
+    seeProject.addEventListener('click', (e) => {
+      const position = e.target.id * 1;
+      func(position);
+    });
+
+    firstSectionSecondPart.append(h2, divList, workText, language, seeProject);
+    card.append(img, firstSectionSecondPart);
+    workSection.append(card);
   });
-  const seeProject = document.createElement('a');
-  seeProject.classList.add('seeProject');
-  seeProject.setAttribute('id', `${i}`);
-  seeProject.innerText = 'See Project';
+};
 
-  seeProject.addEventListener('click', (e) => {
-    const position = e.target.id * 1;
-    func(position);
-  });
-
-  firstSectionSecondPart.append(h2, divList, workText, language, seeProject);
-  card.append(img, firstSectionSecondPart);
-  workSection.append(card);
+if (projects[0].image) {
+  const newPorjects = [...projects];
+  loadCards(newPorjects);
 }
