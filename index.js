@@ -191,6 +191,14 @@ const textarea = document.getElementById('textarea');
 const message = document.getElementById('erorrMsg');
 const form = document.getElementById('form');
 
+const dataFromStorage = JSON.parse(localStorage.getItem('data'));
+
+if (dataFromStorage) {
+  email.setAttribute('value', dataFromStorage.email);
+  namefield.setAttribute('value', dataFromStorage.name);
+  textarea.innerText = dataFromStorage.text;
+}
+
 const checkEmail = () => {
   const emailValue = email.value.trim();
   if (emailValue.match(/[A-Z]/)) {
