@@ -564,19 +564,6 @@ a:hover#resume {
   display: none;
 }
 
-.erorrMsg {
-  color: red;
-  font-weight: bold;
-  font-size: 12px;
-  background-color: rgb(255, 255, 255);
-  padding: 5px 8px;
-  border-radius: 8px;
-  text-align: center;
-  margin-top: -10px;
-  width: fit-content;
-  display: none;
-}
-
 @media screen and (min-width: 760px) {
   .d-hide {
     display: none;
