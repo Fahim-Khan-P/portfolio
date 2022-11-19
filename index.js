@@ -184,7 +184,8 @@ const func = (position) => {
 
   popupSection[0].append(topDiv, topDivList, popImage, bottomDiv);
 };
-if (!JSON.stringify(localStorage.getItem('data'))) {
+
+if (!JSON.parse(localStorage.getItem('data'))) {
   localStorage.setItem('data', JSON.stringify({ name: '', email: '', text: '' }));
 }
 
