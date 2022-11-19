@@ -184,19 +184,45 @@ const func = (position) => {
 
   popupSection[0].append(topDiv, topDivList, popImage, bottomDiv);
 };
-
-const email = document.getElementById('email');
-const namefield = document.getElementById('username');
-const textarea = document.getElementById('textarea');
-const message = document.getElementById('erorrMsg');
-const form = document.getElementById('form');
+if (!JSON.stringify(localStorage.getItem('data'))) {
+  localStorage.setItem('data', JSON.stringify({ name: '', email: '', text: '' }));
+}
 
 const dataFromStorage = JSON.parse(localStorage.getItem('data'));
 
-if (dataFromStorage) {
-  email.setAttribute('value', dataFromStorage.email);
-  namefield.setAttribute('value', dataFromStorage.name);
-  textarea.innerText = dataFromStorage.text;
+const email = document.getElementById('email');
+email.addEventListener('change', () => {
+  setTimeout(() => {
+    dataFromStorage.email = email.value;
+    localStorage.setItem('data', JSON.stringify(dataFromStorage));
+  }, 100);
+});
+
+const namefield = document.getElementById('username');
+namefield.addEventListener('change', () => {
+  setTimeout(() => {
+    dataFromStorage.name = namefield.value;
+    localStorage.setItem('data', JSON.stringify(dataFromStorage));
+  }, 100);
+});
+
+const textarea = document.getElementById('textarea');
+textarea.addEventListener('change', () => {
+  setTimeout(() => {
+    dataFromStorage.text = textarea.value;
+    localStorage.setItem('data', JSON.stringify(dataFromStorage));
+  }, 100);
+});
+
+const message = document.getElementById('erorrMsg');
+const form = document.getElementById('form');
+
+const updatedData = JSON.parse(localStorage.getItem('data'));
+
+if (updatedData) {
+  email.setAttribute('value', updatedData.email);
+  namefield.setAttribute('value', updatedData.name);
+  textarea.innerText = updatedData.text;
 }
 
 const checkEmail = () => {
@@ -212,14 +238,6 @@ const checkEmail = () => {
 form.addEventListener('submit', (e) => {
   if (checkEmail() === false) {
     e.preventDefault();
-  } else {
-    const data = {
-      name: namefield.value,
-      email: email.value,
-      text: textarea.value,
-    };
-
-    localStorage.setItem('data', JSON.stringify(data));
   }
 });
 
