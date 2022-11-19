@@ -185,9 +185,46 @@ const func = (position) => {
   popupSection[0].append(topDiv, topDivList, popImage, bottomDiv);
 };
 
+if (!JSON.parse(localStorage.getItem('data'))) {
+  localStorage.setItem('data', JSON.stringify({ name: '', email: '', text: '' }));
+}
+
+const dataFromStorage = JSON.parse(localStorage.getItem('data'));
+
 const email = document.getElementById('email');
+email.addEventListener('change', () => {
+  setTimeout(() => {
+    dataFromStorage.email = email.value;
+    localStorage.setItem('data', JSON.stringify(dataFromStorage));
+  }, 100);
+});
+
+const namefield = document.getElementById('username');
+namefield.addEventListener('change', () => {
+  setTimeout(() => {
+    dataFromStorage.name = namefield.value;
+    localStorage.setItem('data', JSON.stringify(dataFromStorage));
+  }, 100);
+});
+
+const textarea = document.getElementById('textarea');
+textarea.addEventListener('change', () => {
+  setTimeout(() => {
+    dataFromStorage.text = textarea.value;
+    localStorage.setItem('data', JSON.stringify(dataFromStorage));
+  }, 100);
+});
+
 const message = document.getElementById('erorrMsg');
 const form = document.getElementById('form');
+
+const updatedData = JSON.parse(localStorage.getItem('data'));
+
+if (updatedData) {
+  email.setAttribute('value', updatedData.email);
+  namefield.setAttribute('value', updatedData.name);
+  textarea.innerText = updatedData.text;
+}
 
 const checkEmail = () => {
   const emailValue = email.value.trim();
